@@ -26,7 +26,7 @@ peer.on("call", async (call) => {
     try {
         stream = await navigator.mediaDevices.getUserMedia(
             {
-                audio: false,
+                audio: true,
                 video: true,
             });
         call.answer(stream);
@@ -51,7 +51,7 @@ socket.on("user-connected", async (userId) => {
     try {
         stream = await navigator.mediaDevices.getUserMedia(
             {
-                audio: false,
+                audio: true,
                 video: true,
             })
     }
@@ -67,7 +67,7 @@ socket.on("user-connected", async (userId) => {
     try {
         stream = await navigator.mediaDevices.getUserMedia(
             {
-                audio: false,
+                audio: true,
                 video: true,
             });
         if (stream != undefined) {
