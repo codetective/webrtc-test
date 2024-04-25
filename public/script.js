@@ -2,7 +2,8 @@
 alert('Ready for a media call') //remove later
 
 let Peer = window.Peer;
-const socket = io('/');
+// const socket = io('/');
+const socket = io('/',{transports: ['websocket']});
 
 const videoGrid = document.getElementById("video-grid");
 
