@@ -15,7 +15,7 @@ const peer = new Peer({
     host: '/',
     path: '/peerjs',
     debug: 2,
-    port: 3030,
+    port: 443,
 });
 
 peer.on("call", async (call) => {
